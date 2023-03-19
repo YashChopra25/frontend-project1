@@ -1,1 +1,125 @@
-css added
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    overflow: none;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 23px;
+    list-style-type: none;
+    /* float: left; -> because ul is flex box, then no need of it*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+
+}
+
+nav ul li a:hover {
+    /* color: rgb(22,90,236); */
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 493px;
+    height: 23px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+    /* calc is funtion it is used to calculate.. note: sign need spaces*/
+}
+
+.slider {
+   display: flex;
+   justify-content: center  ;
+
+}
+
+.card {
+    margin: auto;
+    max-width: 91vw;
+}
+
+.card h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction:column;
+    
+}
+
+.my-2 {
+    margin: 23px 0;
+}
+.my-1 {
+    margin: 5px 0;
+}
+.my-3 {
+    margin: 0 5px ;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
